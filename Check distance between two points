@@ -1,0 +1,6 @@
+// Attribute Wrangle, Run over 'Points'
+// Documentation https://www.sidefx.com/docs/houdini/vex/functions/distance.html
+vector start = point(0, "P", 0); // get the first point position
+vector end = point(0, "P", 1); // get the second point position
+
+f@debug_distance = distance(start,end); // calculate the distance between the two points
